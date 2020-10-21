@@ -1,0 +1,16 @@
+# Nmap 7.60 scan initiated Fri Oct 16 20:31:05 2020 as: nmap -oN nmapsFT4.txt -sF -T4 scanme.nmap.org
+Warning: 45.33.32.156 giving up on port because retransmission cap hit (6).
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.25s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 993 closed ports
+PORT      STATE         SERVICE
+22/tcp    open|filtered ssh
+80/tcp    open|filtered http
+135/tcp   open|filtered msrpc
+139/tcp   open|filtered netbios-ssn
+445/tcp   open|filtered microsoft-ds
+9929/tcp  open|filtered nping-echo
+31337/tcp open|filtered Elite
+
+# Nmap done at Fri Oct 16 20:31:55 2020 -- 1 IP address (1 host up) scanned in 50.64 seconds

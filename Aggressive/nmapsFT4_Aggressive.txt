@@ -1,0 +1,44 @@
+# Nmap 7.60 scan initiated Fri Oct 16 20:49:23 2020 as: nmap -oN nmapsFT4.txt -sF -A -T4 scanme.nmap.org
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.31s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 993 closed ports
+PORT      STATE         SERVICE    VERSION
+22/tcp    open          ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 ac:00:a0:1a:82:ff:cc:55:99:dc:67:2b:34:97:6b:75 (DSA)
+|   2048 20:3d:2d:44:62:2a:b0:5a:9d:b5:b3:05:14:c2:a6:b2 (RSA)
+|   256 96:02:bb:5e:57:54:1c:4e:45:2f:56:4c:4a:24:b2:57 (ECDSA)
+|_  256 33:fa:91:0f:e0:e1:7b:1f:6d:05:a2:b0:f1:54:41:56 (EdDSA)
+80/tcp    open          http       Apache httpd 2.4.7 ((Ubuntu))
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Go ahead and ScanMe!
+135/tcp   open|filtered tcpwrapped
+139/tcp   open|filtered tcpwrapped
+445/tcp   open|filtered tcpwrapped
+9929/tcp  open          nping-echo Nping echo
+31337/tcp open          tcpwrapped
+Aggressive OS guesses: Linux 3.1 (91%), Linux 3.2 (91%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (90%), Linux 3.2 - 4.8 (89%), ASUS RT-N56U WAP (Linux 3.4) (89%), Linux 3.16 (89%), Linux 3.8 (89%), Linux 2.6.32 - 3.10 (89%), Linux 2.6.32 - 3.9 (89%), Android 4.1.1 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 143/tcp)
+HOP RTT       ADDRESS
+1   72.12 ms  fritz.box (192.168.178.1)
+2   93.63 ms  dslb-088-067-112-001.088.067.pools.vodafone-ip.de (88.67.112.1)
+3   ...
+4   54.56 ms  92.79.214.112
+5   ...
+6   178.55 ms 145.254.2.179
+7   65.37 ms  ae32-100-pcr1.fnt.cw.net (195.2.18.217)
+8   278.13 ms ae15-pcr1.ptl.cw.net (195.2.9.126)
+9   278.09 ms et-7-1-0-xcr1.nyh.cw.net (195.2.24.241)
+10  277.19 ms 195.2.31.5
+11  278.11 ms ae1-xcr1.sje.cw.net (195.2.24.97)
+12  278.16 ms linode-gw-xcr1.sje.cw.net (195.2.14.206)
+13  278.17 ms 173.230.159.71
+14  278.23 ms scanme.nmap.org (45.33.32.156)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct 16 20:50:46 2020 -- 1 IP address (1 host up) scanned in 82.54 seconds
